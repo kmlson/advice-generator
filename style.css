@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+    --font: 'Manrope', sans-serif;
+    --fontsize: 2.8rem;
+    --fontWeights:800;
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    --componentWidthDesktop:54.5rem;
+    --componentHightDesktop:33.6rem;
+    --componentWidthMobile:34.5rem;
+    --componentHightMobile:31.5rem;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkBlue);
+    font-size: 1.4rem;
+
+}
+
+.advice-component {
+    width: var(--componentWidthDesktop);
+    height: var(--componentHightDesktop);
+    font-size: var(--fontsize);
+    background-color: var(--DarkGrayishBlue);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    
+    
+}
+
+.adviceId {
+    color: var(--NeonGreen);
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.advice-text {
+
+    color: var(--LightCyan);
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: var(--font);
+    padding: 0 2rem;
+}
+
+.sparator {
+    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 4.5rem;
+    top:23.5rem;
+    z-index: 100;
+}
+
+.dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 24rem;
+    top:30.5rem;
+    z-index: 100;
+    background-color: var(--NeonGreen);
+}
+
+@media only screen and (max-width: 620px)  {
+
+    
+.advice-component {
+    width: var(--componentHightMobile);
+    height: var(--componentHightMobile);
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.sparator {
+    
+
+    left: 1rem;
+    top:26.5rem;
+    z-index: 100;
+}
+
+#button {
+    content:url("images/pattern-divider-mobile.svg");
+}
+
+.dice {
+  
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 13.6rem;
+    top:29.5rem;
+    z-index: 100;
+    background-color: var(--NeonGreen);
+}
+
+.advice-text {
+    font-size: 2rem;
+    font-family: var(--font);
+    padding: 0 0.1rem;
+}
+
+
+}
